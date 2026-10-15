@@ -5,13 +5,13 @@
 class Unpause < Formula
   desc "One list of every Claude Code session on your machine. Pick one, it opens where it left off."
   homepage "https://github.com/hamzafer/unpause"
-  version "0.8.2"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hamzafer/unpause/releases/download/v0.8.2/unpause_0.8.2_darwin_amd64.tar.gz"
-      sha256 "28f9882fd9b5d22082faef9d6c863a56231211e58b38e8cb13a9eac200b33233"
+      url "https://github.com/hamzafer/unpause/releases/download/v0.9.0/unpause_0.9.0_darwin_amd64.tar.gz"
+      sha256 "da881a7a7dc3899406632a1ef32acbe76a70e2b07648f5a79689a3854897c4cc"
 
       define_method(:install) do
         bin.install "unpause"
@@ -21,8 +21,8 @@ class Unpause < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hamzafer/unpause/releases/download/v0.8.2/unpause_0.8.2_darwin_arm64.tar.gz"
-      sha256 "cce107254ea0efc70752c54e4558e94049c9801538058b45115f435eda14163e"
+      url "https://github.com/hamzafer/unpause/releases/download/v0.9.0/unpause_0.9.0_darwin_arm64.tar.gz"
+      sha256 "9d16397b772027c459c97b19d8d87cfcba70bb250fadc97f0b576bdc3a253cf6"
 
       define_method(:install) do
         bin.install "unpause"
@@ -35,8 +35,8 @@ class Unpause < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hamzafer/unpause/releases/download/v0.8.2/unpause_0.8.2_linux_amd64.tar.gz"
-      sha256 "d22817dbf4e6a95c2b8fe9699c7833ca22ec7d6ce49ce6198a33ebdcf4a66739"
+      url "https://github.com/hamzafer/unpause/releases/download/v0.9.0/unpause_0.9.0_linux_amd64.tar.gz"
+      sha256 "17077f4b20f37d910a3c316a5b5fb94c5635d8482b5515c1dc73892fdb235ecb"
       define_method(:install) do
         bin.install "unpause"
         bash_completion.install "completions/unpause.bash" => "unpause"
@@ -45,8 +45,8 @@ class Unpause < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hamzafer/unpause/releases/download/v0.8.2/unpause_0.8.2_linux_arm64.tar.gz"
-      sha256 "59be0d1f29296e21e0f4fe8c11e0d54b907e5c530b10da477de530f1d254577e"
+      url "https://github.com/hamzafer/unpause/releases/download/v0.9.0/unpause_0.9.0_linux_arm64.tar.gz"
+      sha256 "d9c1acc8a60ac6336860ed8a06045e2831ab9836b5c3de54aa27a9dd567a0a2e"
       define_method(:install) do
         bin.install "unpause"
         bash_completion.install "completions/unpause.bash" => "unpause"
